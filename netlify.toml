@@ -1,0 +1,8 @@
+[context.staging.environment]
+	API_ENV = "staging"
+
+[context.develop.environment]
+	API_ENV = "development"
+
+[context.master.environment]
+	API_ENV = "production"
