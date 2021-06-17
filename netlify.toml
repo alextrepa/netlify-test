@@ -1,0 +1,19 @@
+[build]
+  publish = "build"
+  command = "npm run build:release"
+
+# Redirects
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[context.staging.environment]
+	API_ENV = "staging"
+
+[context.develop.environment]
+	API_ENV = "development"
+
+[context.master.environment]
+	API_ENV = "production"
